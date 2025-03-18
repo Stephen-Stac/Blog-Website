@@ -26,3 +26,8 @@ A simple blog application that allows users to create, edit, delete posts, and a
 - Use the navigation bar to log in, register, or create a new post.
 - Users can edit or delete their posts and add comments to any post.
 
+
+## Security
+- CSRF protection is implemented using tokens generated and validated in `includes/csrf.php`.
+- Passwords are hashed using `password_hash` and verified using `password_verify`.
+
